@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --bs-black: #000;
+    --bs-white: #fff;
+    --bs-yellow: #ffc107;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--bs-black);
+    color: var(--bs-white);
+}
+
+.cabecalho{
+    padding: 2% 0 5% 5%;
+
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link{
+    font-size: 20px;
+    font-family: "Kanit", sans-serif;
+    color: var(--bs-white);
+    text-decoration: none;
+    position: relative;
+
+}
+
+.cabecalho__menu__link::after{
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: var(--bs-yellow);
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    transition: 0.25s ease-in-out;
+
+}
+
+.cabecalho__menu__link:hover{
+    font-size: 20px;
+    font-family: "Kanit", sans-serif;
+    color:  var(--bs-yellow);
+    text-decoration: none;
+    transition: 0.15s;  
+    cursor: pointer;
+}
+
+.cabecalho__menu__link:hover::after{
+    width: 100%;
+}
+.container_conteudo{
+    display: flex;
+    justify-content: center;
+    padding: 5% 5%;
+    align-items: center;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 165px;
+
+}
+
+.grind_conteudo{
+    align-content: space-between;
+    
+}
+
+.img_logo{
+    height: 83px;
+}
+
+.link:hover{
+    border: 3px solid var(--bs-yellow);
+    background-color: var(--bs-yellow);
+    transition: 0.42s;  
+    cursor: pointer;
+    width: 288px;
+    color: var(--bs-black);
+    
+    
+}
+.link{
+    font-family: "Kanit", sans-serif;
+    font-style: italic;
+    font-size: 25px;
+    color:var(--bs-white);
+    padding: 7px;
+    width: 280px;
+    text-align: center;
+    border-style: groove;
+    border-radius: 20px;
+    background-color: var(--bs-black);
+
+}
+.rodape{
+    background-color: var(--bs-yellow);
+    padding: 20px;
+}
